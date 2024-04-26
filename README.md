@@ -3,7 +3,7 @@
 👉 Porfolio website with personal and contact inforamation, projects showcase and a blog.
 
 - Responsive
-- Night Mode 🌚
+- Dark Mode 🌚
 - RSS feed
 - Auto generate blog posts OG images ( requries to build locally first, then deploy )
 - .mdx files for blog posts ( .md if no React ) 💻
@@ -18,17 +18,16 @@ Google Lighthouse scores are all 💯 ( sometimes 97-98 performance for mobile )
 I've also added service worker to pass PWA check as well, just for fun, so it is also installable on all devices ✔
 
 Feel free to contribute, open issues or PRs.
+
 ## Demo
 
-Demo for this project is available @ [aleksa.codes](https://aleksa.codes)
-
-This portfolio/blog was inspired and built on top of: https://daisy-blog.netlify.app/ by [@saadeghi](https://github.com/saadeghi) the creator of daisyUI.
+Demo for this project is available @ [Yan Berdin](https://)
 
 ## 🚀 Project Structure
 
 Inside of this project, you'll find the following directories and files:
 
-```
+```md
 /
 ├── public/
 ├── src/
@@ -49,7 +48,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command             | Action                   
+| Command             | Action
 | :------------------ | :-----------------------------------------------------------|
 | `yarn install`      | Installs dependencies                                       |
 | `yarn start`        | Starts local dev server at `localhost:3000` without tinaCMS |

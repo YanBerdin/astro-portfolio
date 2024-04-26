@@ -1,9 +1,9 @@
 {
-  "name": "aleksa.codes",
-  "short_name": "aleksa.codes",
+  "name": "Yan Portfolio",
+  "short_name": "Yan.Dev",
   "display": "standalone",
   "orientation": "portrait",
-  "description": "Aleksa's personal website",
+  "description": "Yan's personal website",
   "theme_color": "#463aa1",
   "background_color": "#463aa1",
   "scope": "/",

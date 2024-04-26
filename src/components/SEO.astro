@@ -10,21 +10,21 @@ export interface Props {
   slug?: string;
 }
 
-const DOMAIN = 'https://aleksa.codes';
-const DEFAULT_OG_IMAGE = 'https://aleksa.codes/assets/aleksa-codes-og.png';
+const DOMAIN = 'https://aleksa.codes'; //TODO: change link to the actual domain
+const DEFAULT_OG_IMAGE = 'https://aleksa.codes/assets/aleksa-codes-og.png'; //TODO: change link to the actual domain
 const {
-  title = 'aleksa.codes',
-  description = "Aleksa is junior React developer, skilled in building user interfaces and front-end applications using the popular JavaScript library. Passionate about coding and dedicated to creating visually appealing and user-friendly experiences, Aleksa is constantly seeking to improve and expand their skills. Explore Aleksa's (or Alexa's) portfolio to see their work and learn more about their capabilities as a web developer.",
-  siteName = 'aleksa.codes',
+  title = 'Yan',
+  description = "Yan is junior React developer, skilled in building user interfaces and front-end applications using the popular JavaScript library. Passionate about coding and dedicated to creating visually appealing and user-friendly experiences, Yan is constantly seeking to improve and expand their skills. Explore Yan's portfolio to see their work and learn more about their capabilities as a web developer.",
+  siteName = 'Portfolio',
   canonical = DOMAIN,
   ogImage,
   ogType = 'website',
-  twitterHandle = '@aleksacodes',
+  twitterHandle = '@YanB21',
   slug = undefined
 } = Astro.props as Props;
 ---
 
-{title === 'aleksa.codes' ? <title>{`${siteName}`}</title> : <title>{`${title} | ${siteName}`}</title>}
+{title === 'Yan' ? <title>{`${siteName}`}</title> : <title>{`${title} | ${siteName}`}</title>}
 
 <meta charset='UTF-8' />
 <meta http-equiv='X-UA-Compatible' content='IE=edge' />
@@ -38,25 +38,25 @@ const {
 <meta name='robots' content='index,follow' />
 <meta name='googlebot' content='index,follow' />
 
-<meta name='title' content={title === 'aleksa.codes' ? 'aleksa.codes | Web Developer' : `${title} | ${siteName}`} />
+<meta name='title' content={title === 'Yan' ? 'Yan | Web Developer' : `${title} | ${siteName}`} />
 <meta name='description' content={description} />
 
 <meta property='og:type' content={ogType} />
 <meta property='og:url' content={canonical} />
-<meta property='og:title' content={title === 'aleksa.codes' ? 'Portfolio & Blog' : `${title} | ${siteName}`} />
+<meta property='og:title' content={title === 'Yan' ? 'Portfolio & Blog' : `${title} | ${siteName}`} />
 <meta property='og:description' content={description} />
 <meta property='og:image' content={slug !== undefined ? ogImage : DEFAULT_OG_IMAGE} />
-<meta property='og:image:alt' content={slug !== undefined ? title + 'Social Image' : 'Aleksa Codes Social Image'} />
+<meta property='og:image:alt' content={slug !== undefined ? title + 'Social Image' : 'Yan.B Social Image'} />
 
 <meta property='twitter:card' content='summary_large_image' />
 <meta property='twitter:url' content={canonical} />
-<meta property='twitter:title' content={title === 'aleksa.codes' ? 'Portfolio & Blog' : `${title} | ${siteName}`} />
+<meta property='twitter:title' content={title === 'Yan' ? 'Portfolio & Blog' : `${title} | ${siteName}`} />
 <meta property='twitter:creator' content={twitterHandle} />
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={slug !== undefined ? ogImage : DEFAULT_OG_IMAGE} />
 <meta
   property='twitter:image:alt'
-  content={slug !== undefined ? title + 'Social Image' : 'Aleksa Codes Social Image'}
+  content={slug !== undefined ? title + 'Social Image' : 'Yan.B Social Image'}
 />
 
 <link rel='canonical' href={canonical ?? DOMAIN} />
@@ -77,10 +77,10 @@ const {
 
 <link rel='manifest' href='/manifest.json' />
 <link rel='shortcut icon' href='/favicon.ico' />
-<meta name='application-name' content='aleksa.codes' />
+<meta name='application-name' content='Yan' />
 <meta name='apple-mobile-web-app-capable' content='yes' />
 <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-<meta name='apple-mobile-web-app-title' content='aleksa.codes' />
+<meta name='apple-mobile-web-app-title' content='Yan' />
 <meta name='format-detection' content='telephone=no' />
 <meta name='mobile-web-app-capable' content='yes' />
 <meta name='theme-color' content='#463aa1' />

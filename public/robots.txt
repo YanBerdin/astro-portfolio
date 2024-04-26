@@ -4,3 +4,4 @@ User-agent: *
 Disallow:
 Host: https://aleksa.codes/
 Sitemap: https://aleksa.codes/sitemap-index.xml
+# TODO update URL

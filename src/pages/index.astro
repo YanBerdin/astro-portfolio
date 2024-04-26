@@ -1,34 +1,42 @@
 ---
-import Layout from '../components/layouts/Layout.astro';
+import Layout from "../components/layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class='flex flex-row items-center justify-start mb-4 md:mb-8'>
-    <span id='typed' class='text-4xl font-extrabold lg:text-5xl text-base-content'>Hello World</span>
-    <span class='not-prose ml-3 animate-waving-hand'>
+  <div class="flex flex-row items-center justify-start mb-4 md:mb-8"></div>
+  <h1 class="mb-[-48px] lg:mb-[-48px] flex flex-row items-center">
+    <span
+      id="typed"
+      class="text-4xl font-extrabold lg:text-5xl text-base-content">Hello</span
+    >
+    <span class="not-prose ml-3 animate-waving-hand">
       <img
-        src='/assets/waving-hand.webp'
-        alt='waving hand'
-        class='w-12 h-12'
-        srcset='
-          /assets/waving-hand.webp 1x,
-          /assets/waving-hand.webp 2x
-        '
+        src="/assets/waving-hand.webp"
+        alt="waving hand"
+        class="w-12 h-12"
+        srcset="/assets/waving-hand.webp 1x, /assets/waving-hand.webp 2x"
       />
     </span>
-  </div>
-  <h1 class='mb-[-48px] lg:mb-[-48px]'>
-    My name is <span
-      class='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-base-content to-indigo-500 dark:from-base-content dark:to-indigo-300'
-      >Aleksa</span
+     &nbsp;I'm&nbsp;
+    <span
+      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-base-content to-indigo-500 dark:from-base-content dark:to-indigo-300"
+    >
+      Yan</span
     >
   </h1>
   <h2>
-    I design and build{' '}
-    <span class='highlight-heading animate-box-shadow dark:animate-winter-box-shadow'>things for the web.</span>
+    I design and build{" "}
+    <span
+      class="highlight-heading animate-box-shadow dark:animate-winter-box-shadow"
+      >things for the web.</span
+    >
   </h2>
-  <div class='text-xl font-semibold'>Computer Science Student and Web Developer.</div>
-  <div class='w-[275px] h-[275px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] mx-auto mt-4 bg-laptop'>
+  <div class="text-xl font-semibold">
+    Computer Science Student and Web Developer.
+  </div>
+  <div
+    class="w-[275px] h-[275px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] mx-auto mt-4 bg-laptop"
+  >
     <!-- Laptop image here -->
   </div>
 </Layout>

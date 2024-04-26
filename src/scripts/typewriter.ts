@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false,
     autoStart: true
   });
-  tw.typeString('aleksa.codes').start();
+  tw.typeString('Yan.B').start();
 });

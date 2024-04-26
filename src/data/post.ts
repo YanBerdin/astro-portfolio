@@ -40,7 +40,7 @@ export function published(posts: (MarkdownInstance | MDXComponent)[]): Post[] {
 export function getRSS(posts: (MarkdownInstance | MDXComponent)[]): any {
   return {
     stylesheet: '/rss/styles.xsl',
-    title: 'Blog Posts (from aleksa.codes)',
+    title: 'Blog Posts (from Yan.B)',
     description:
       'Beginner friendly developer content, with a focus on React, TypeScript, Next.js, Astro, Tailwind CSS and more.',
     site: import.meta.env.SITE,

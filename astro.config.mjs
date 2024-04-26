@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
+//TODO: Add my site URL
 export default defineConfig({
   site: 'https://aleksa.codes',
   markdown: {
