@@ -1,123 +1,136 @@
 ---
-import Layout from '../components/layouts/Layout.astro';
+import Layout from "../components/layouts/Layout.astro";
 ---
 
 <Layout
-  title='Contact'
-  description='Looking to collaborate with or hire a talented junior React developer? Yan is skilled in building user interfaces and front-end applications using the popular JavaScript library, and is always looking to improve and expand his skills. Visit the contact page to get in touch and learn more about how Yan can bring his expertise to your project.'
+  title="Contact"
+  description="Looking to collaborate with or hire a talented junior React developer? Yan is skilled in building user interfaces and front-end applications using the popular JavaScript library, and is always looking to improve and expand his skills. Visit the contact page to get in touch and learn more about how Yan can bring his expertise to your project."
 >
   <h1>Contact me</h1>
-  <div class='flex flex-col items-center justify-center h-full'>
-    <div class='mt-[-24px] mb-4 flex flex-col sm:flex-row items-start justify-center sm:items-center gap-4 w-full'>
-      <div class='flex flex-row items-center justify-center w-full xs:w-1/2'>
+  <div class="flex flex-col items-center justify-center h-full">
+    <div
+      class="mt-[-24px] mb-4 flex flex-col sm:flex-row items-start justify-center sm:items-center gap-4 w-full"
+    >
+      <div class="flex flex-row items-center justify-center w-full xs:w-1/2">
         <!-- Avater based on if it is winter or not -->
-        <img class='avatar m-0' src='/assets/Avatar.svg' alt='Avatar' />
-        <img class='winter-avatar m-0' src='/assets/WinterAvatar.svg' alt='Winter Avatar' />
+        <img class="avatar m-0" src="/assets/Avatar.svg" alt="Avatar" />
+        <img
+          class="winter-avatar m-0"
+          src="/assets/WinterAvatar.svg"
+          alt="Winter Avatar"
+        />
       </div>
-      <p class='w-full'>
-        Feel free to reach out to me at any time, I am always interested in new <span class='highlight'
-          >ideas and opportunities!</span
+      <p class="w-full">
+        Feel free to reach out to me at any time, I am always interested in new <span
+          class="highlight">ideas and opportunities!</span
         >
       </p>
     </div>
+     // https://formsubmit.co/?utm_source=formsubmit.co&utm_medium=site%20link&utm_campaign=submission%20page
     <form
-      class='flex flex-col items-center justify-center w-full gap-2'
-      target='_blank'
-      action='https://formsubmit.co/d4aea92274000f3a15f8e9eba584e72f'
-      method='POST'
+      class="flex flex-col items-center justify-center w-full gap-2"
+      action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2"
+      method="POST"
     >
-      <div class='flex flex-row items-center justify-between w-full gap-4'>
-        <div class='w-full'>
-          <label html-for='name-field'>
+      <div class="flex flex-row items-center justify-between w-full gap-4">
+        <div class="w-full">
+          <label html-for="name-field">
             Name
-            <div id='name-field'>
+            <div id="name-field">
               <input
-                type='text'
-                name='name'
-                class='w-full input border-gray-700 dark:border-gray-300'
-                placeholder='e.g. Bon Jovi'
+                type="text"
+                name="name"
+                class="w-full input border-gray-700 dark:border-gray-300"
+                placeholder="e.g. Bon Jovi"
                 required
               />
             </div>
           </label>
         </div>
-        <div class='w-full'>
-          <label html-for='email-field'>
+        <div class="w-full">
+          <label html-for="email-field">
             Email
-            <div id='email-field'>
+            <div id="email-field">
               <input
-                type='email'
-                name='email'
-                class='w-full input border-gray-700 dark:border-gray-300'
-                placeholder='e.g. bon.jovi@gmail.com'
+                type="email"
+                name="email"
+                class="w-full input border-gray-700 dark:border-gray-300"
+                placeholder="e.g. bon.jovi@gmail.com"
                 required
               />
             </div>
           </label>
         </div>
       </div>
-      <div class='w-full'>
-        <label html-for='subject-field'>
+      <div class="w-full">
+        <label html-for="subject-field">
           Subject
-          <div id='subject-field'>
+          <div id="subject-field">
             <input
-              type='text'
-              name='_subject'
-              class='w-full input border-gray-700 dark:border-gray-300'
+              type="text"
+              name="_subject"
+              class="w-full input border-gray-700 dark:border-gray-300"
               placeholder={`e.g. Let's Connect!`}
               required
             />
           </div>
         </label>
       </div>
-      <div class='w-full'>
-        <label html-for='message-field'>
+      <div class="w-full">
+        <label html-for="message-field">
           Message
-          <div id='message-field'>
+          <div id="message-field">
             <textarea
-              placeholder='Your Message'
-              class='w-full textarea resize-none border-gray-700 dark:border-gray-300'
-              name='message'
+              placeholder="Your Message"
+              class="w-full textarea resize-none border-gray-700 dark:border-gray-300"
+              name="message"
               rows={4}
               required></textarea>
           </div>
         </label>
       </div>
-      <div class='flex flex-row items-center justify-start w-full gap-4'>
-        <button type='submit' class='gap-1 btn btn-secondary hover:text-slate-300'>
+      <div class="flex flex-row items-center justify-start w-full gap-4">
+        <button
+          type="submit"
+          class="gap-1 btn btn-secondary hover:text-slate-300"
+        >
           <svg
-            xmlns='http://www.w3.org/2000/svg'
-            class='icon icon-tabler icon-tabler-send'
-            width='20'
-            height='20'
-            viewBox='0 0 24 24'
-            stroke-width='2'
-            stroke='currentColor'
-            fill='none'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-send"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-            <line x1='10' y1='14' x2='21' y2='3'></line>
-            <path d='M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5'></path>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+            <path
+              d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"
+            ></path>
           </svg> Send
         </button>
-        <button type='reset' class='gap-1 btn'>
+        <button type="reset" class="gap-1 btn">
           <svg
-            xmlns='http://www.w3.org/2000/svg'
-            class='icon icon-tabler icon-tabler-eraser'
-            width='20'
-            height='20'
-            viewBox='0 0 24 24'
-            stroke-width='2'
-            stroke='currentColor'
-            fill='none'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-eraser"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-            <path d='M19 19h-11l-4 -4a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9 9'></path>
-            <line x1='18' y1='12.3' x2='11.7' y2='6'></line>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M19 19h-11l-4 -4a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9 9"
+            ></path>
+            <line x1="18" y1="12.3" x2="11.7" y2="6"></line>
           </svg> Clear
         </button>
       </div>
@@ -125,9 +138,11 @@ import Layout from '../components/layouts/Layout.astro';
   </div>
   <script>
     // Based on if it is winter or not, show the correct avatar
-    const winterAvatar = document.querySelector('.winter-avatar');
-    const avatar = document.querySelector('.avatar');
+    const winterAvatar = document.querySelector(".winter-avatar");
+    const avatar = document.querySelector(".avatar");
     const isWinter = [11, 0, 1].includes(new Date().getMonth());
-    isWinter ? avatar?.classList.add('hidden') : winterAvatar?.classList.add('hidden');
+    isWinter
+      ? avatar?.classList.add("hidden")
+      : winterAvatar?.classList.add("hidden");
   </script>
 </Layout>

@@ -4,9 +4,9 @@ import Layout from "../components/layouts/Layout.astro";
 
 <Layout>
   <!-- <div class="flex flex-row items-center justify-start mb-4 md:mb-8"></div> --> 
-  <div class="flex h-[150px] flex-row justify-between items-start mb-4 md:mb-8 pr-8">
+  <div class="flex flex-raw justify-between items-start mb-4 md:mb-8 ">
     <div>
-      <h1 class="mb-[-48px] lg:mb-[-48px] flex flex-row items-center">
+      <h1 class="mb-[-48px] lg:mb-[-48px] flex items-center flex-wrap">
         <span
           id="typed"
           class="text-4xl font-extrabold lg:text-5xl text-base-content">Hello</span
@@ -38,7 +38,7 @@ import Layout from "../components/layouts/Layout.astro";
       </div>
     </div>
       <img
-        class="not-prose ml-4 mt-0 w-[120px] min-w-[100px] border rounded-lg"
+        class="not-prose ml-4 mt-0 w-[110px] min-w-[60px] border rounded-lg"
         src="./public/assets/portrait-preview1.png"
         alt="Yan smiling in a portrait photo."
       />
