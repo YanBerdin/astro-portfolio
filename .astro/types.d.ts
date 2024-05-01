@@ -190,28 +190,28 @@ declare module 'astro:content' {
   slug: "bloom-box";
   body: string;
   collection: "work";
-  data: any
+  data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
 "h20.md": {
 	id: "h20.md";
   slug: "h20";
   body: string;
   collection: "work";
-  data: any
+  data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
 "markdown-mystery-tour.md": {
 	id: "markdown-mystery-tour.md";
   slug: "markdown-mystery-tour";
   body: string;
   collection: "work";
-  data: any
+  data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
 "nested/duvet-genius.md": {
 	id: "nested/duvet-genius.md";
   slug: "nested/duvet-genius";
   body: string;
   collection: "work";
-  data: any
+  data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
 };
 
@@ -223,5 +223,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

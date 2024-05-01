@@ -8,11 +8,11 @@ interface Props {
 const { data, slug } = Astro.props.project;
 ---
 
-<a class="card" href={`/work/${slug}`}>
-	<span class="title">{data.title}</span>
-	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+<a class="card no-underline group" href={`/work/${slug}`}>
+	<span class="title text-xl font-semibold ml-4 absolute top-2 left-0 text-indigo-900">{data.title}</span>
+	<img class="not-prose min-w-96 mt-1 rounded-3xl object-cover  opacity-100 hover:opacity-60 duration-700" src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>
-
+<!-- 
 <style>
 	.card {
 		display: grid;
@@ -62,3 +62,4 @@ const { data, slug } = Astro.props.project;
 		}
 	}
 </style>
+-->
