@@ -3,9 +3,9 @@
 // https://docs.astro.build/en/core-concepts/layouts/
 
 // Component Imports
-import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
+ import MainHead from '../components/MainHead.astro';
+ import Navbar from '../components/Navbar.astro';
+ import Footer from '../components/Footer.astro';
 
 interface Props {
 	title?: string | undefined;
@@ -16,12 +16,12 @@ const { title, description } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<MainHead title={title} description={description} />
+	 <head>
+		 <MainHead title={title} description={description} /> 
 	</head>
 	<body>
-		<div class="stack backgrounds">
-			<Nav />
+		<div class=" backgrounds flex flex-col">
+			<Navbar />
 			<slot />
 			<Footer />
 		</div>
