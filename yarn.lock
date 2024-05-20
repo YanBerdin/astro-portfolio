@@ -144,14 +144,14 @@
     stream-replace-string "^2.0.0"
     zod "^3.22.4"
 
-"@astrojs/tailwind@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-5.0.2.tgz#877c36750bc88b7e18b3ad2aa8f655d4d9769a3c"
-  integrity sha512-oXqeqmBlkQmsltrsU9nEWeXOtrZIAHW8dcmX7BCdrjzPnU6dPwWzAwhddNQ9ihKiWwsLnlbwQZIo2CDigcZlIA==
+"@astrojs/tailwind@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-5.1.0.tgz#f63d285825f448704dbdccb3430980fee7ba7d26"
+  integrity sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==
   dependencies:
     autoprefixer "^10.4.15"
     postcss "^8.4.28"
-    postcss-load-config "^4.0.1"
+    postcss-load-config "^4.0.2"
 
 "@astrojs/telemetry@3.0.4":
   version "3.0.4"
@@ -7415,6 +7415,11 @@ lilconfig@^2.1.0:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
   integrity sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==
 
+lilconfig@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-3.1.1.tgz#9d8a246fa753106cfc205fd2d77042faca56e5e3"
+  integrity sha512-O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==
+
 lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
@@ -9156,13 +9161,13 @@ postcss-load-config@^3.1.4:
     lilconfig "^2.0.5"
     yaml "^1.10.2"
 
-postcss-load-config@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-4.0.1.tgz#152383f481c2758274404e4962743191d73875bd"
-  integrity sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==
+postcss-load-config@^4.0.1, postcss-load-config@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-4.0.2.tgz#7159dcf626118d33e299f485d6afe4aff7c4a3e3"
+  integrity sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==
   dependencies:
-    lilconfig "^2.0.5"
-    yaml "^2.1.1"
+    lilconfig "^3.0.0"
+    yaml "^2.3.4"
 
 postcss-nested@6.0.0:
   version "6.0.0"
@@ -9199,52 +9204,7 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8:
-  version "8.4.27"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.27.tgz#234d7e4b72e34ba5a92c29636734349e0d9c3057"
-  integrity sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==
-  dependencies:
-    nanoid "^3.3.6"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.0.9:
-  version "8.4.21"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.21.tgz#c639b719a57efc3187b13a1d765675485f4134f4"
-  integrity sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==
-  dependencies:
-    nanoid "^3.3.4"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.3.3:
-  version "8.4.24"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.24.tgz#f714dba9b2284be3cc07dbd2fc57ee4dc972d2df"
-  integrity sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==
-  dependencies:
-    nanoid "^3.3.6"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.4.14:
-  version "8.4.20"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.20.tgz#64c52f509644cecad8567e949f4081d98349dc56"
-  integrity sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==
-  dependencies:
-    nanoid "^3.3.4"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.4.23:
-  version "8.4.23"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.23.tgz#df0aee9ac7c5e53e1075c24a3613496f9e6552ab"
-  integrity sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==
-  dependencies:
-    nanoid "^3.3.6"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.4.27, postcss@^8.4.28:
+postcss@^8, postcss@^8.0.9, postcss@^8.3.3, postcss@^8.4.14, postcss@^8.4.23, postcss@^8.4.27, postcss@^8.4.28:
   version "8.4.29"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.29.tgz#33bc121cf3b3688d4ddef50be869b2a54185a1dd"
   integrity sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==
@@ -12093,10 +12053,10 @@ yaml@^1.10.0, yaml@^1.10.2:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.1.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.2.1.tgz#3014bf0482dcd15147aa8e56109ce8632cd60ce4"
-  integrity sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==
+yaml@^2.3.4:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.2.tgz#7a2b30f2243a5fc299e1f14ca58d475ed4bc5362"
+  integrity sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==
 
 yargs-parser@^18.1.2:
   version "18.1.3"
